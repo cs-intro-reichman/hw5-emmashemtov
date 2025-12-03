@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "Compilation",
+      "setup": "javac In.java Wordle.java TesterWordle.java",
+      "run": "java TesterWordle readDictionary",
+      "input": "",
+      "output": "Testing readDictionary:\nPassed: Dictionary read successfully (Passed)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Choose Secret Word",
+      "setup": "",
+      "run": "java TesterWordle chooseSecretWord",
+      "input": "",
+      "output": "Testing chooseSecretWord:\nPassed: Selected valid words from dictionary (Passed)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "ContainsChar Tests",
+      "setup": "",
+      "run": "java TesterWordle containsChar",
+      "input": "",
+      "output": "Testing containsChar:\nPassed 4/4 tests (Passed)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ComputeFeedback Tests",
+      "setup": "",
+      "run": "java TesterWordle computeFeedback",
+      "input": "",
+      "output": "Testing computeFeedback:\nPassed 3/3 tests (Passed)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "StoreGuess Tests",
+      "setup": "",
+      "run": "java TesterWordle storeGuess",
+      "input": "",
+      "output": "Testing storeGuess:\nPassed: Correctly stored guess in 2D array (Passed)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "IsAllGreen Tests",
+      "setup": "",
+      "run": "java TesterWordle isAllGreen",
+      "input": "",
+      "output": "Testing isAllGreen:\nPassed 2/2 tests (Passed)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Game: Winning (Robust)",
+      "setup": "",
+      "run": "java TesterWordle testGameWinRobust",
+      "input": "",
+      "output": "Passed: Game flow correct for winning scenario (Passed)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Game: Losing (Robust)",
+      "setup": "",
+      "run": "java TesterWordle testGameLoseRobust",
+      "input": "",
+      "output": "Passed: Game flow correct for losing scenario (Passed)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Game: Invalid Input (Robust)",
+      "setup": "",
+      "run": "java TesterWordle testGameInvalidRobust",
+      "input": "",
+      "output": "Passed: Invalid input handling correct (Passed)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
